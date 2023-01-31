@@ -27,6 +27,7 @@ export default {
 
 <template>
   <Jumbotron></Jumbotron>
+  <BigMatch></BigMatch>
 </template>
 
 <style>
