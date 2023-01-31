@@ -14,22 +14,19 @@ import AppFooter from './components/Appfooter.vue';
 import { store } from './store';
 
 export default {
-components: {Navbar, Jumbotron, BigMatch, UpcomingMatch, PlayerCard, LeagueTable, Results, NewsSection, NewsCard, AppFooter, AppMain},
-data(){
-  return {
-    store,
+  components: {Navbar, Jumbotron, BigMatch, UpcomingMatch, PlayerCard, LeagueTable, Results, NewsSection, NewsCard, AppFooter, AppMain },
+  data() {
+    return {
+      store,
 
+    }
   }
-}
 }
 
 </script>
 
-
-
 <template>
-
-
+  <Jumbotron></Jumbotron>
 </template>
 
 <style>
