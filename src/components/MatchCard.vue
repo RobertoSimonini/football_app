@@ -44,5 +44,7 @@ export default {
 
 
 <style scoped>
-
+.other-info {
+        background-color: rgb(14 18 23 / 50%);
+    }
 </style>

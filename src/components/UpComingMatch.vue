@@ -10,7 +10,8 @@ export default {
                     transferTeam: 'Inter Club',
                     transferPic: '/src/assets/img/league-club-4.png',
                     date: 'October 20, 2022 17:00 pm',
-                    stadium: 'Expert Stadium'
+                    stadium: 'Expert Stadium',
+                    id: 1
                 },
                 {
                     homeTeam: 'Atletico Club',
@@ -18,7 +19,8 @@ export default {
                     transferTeam: 'Schalke Club',
                     transferPic: '/src/assets/img/league-club-6.png',
                     date: 'September 18, 2022 21:00 pm',
-                    stadium: 'Expert Stadium'
+                    stadium: 'Expert Stadium',
+                    id: 2
                 },
                 {
                     homeTeam: 'United Fs Club',
@@ -26,7 +28,8 @@ export default {
                     transferTeam: 'Bayern Club',
                     transferPic: '/src/assets/img/league-club-8.png',
                     date: 'August 3, 2022 19:00 pm',
-                    stadium: 'Expert Stadium'
+                    stadium: 'Expert Stadium',
+                    id: 3  
                 },
                 {
                     homeTeam: 'Arsenal Club',
@@ -34,7 +37,8 @@ export default {
                     transferTeam: 'Atletico Club',
                     transferPic: '/src/assets/img/league-club-9.png',
                     date: 'July 8, 2022 12:00 pm',
-                    stadium: 'Expert Stadium'
+                    stadium: 'Expert Stadium',
+                    id: 4
                 },
                 {
                     homeTeam: 'Istanbul Club',
@@ -42,7 +46,8 @@ export default {
                     transferTeam: 'United Fs Club',
                     transferPic: '/src/assets/img/league-club-2.png',
                     date: 'June 12, 2022 09:00 am',
-                    stadium: 'Expert Stadium'
+                    stadium: 'Expert Stadium',
+                    id: 5
                 },
             ]
         }
@@ -59,7 +64,7 @@ export default {
     <h2 class="text-white">
         Upcoming Matches
     </h2>
-    <match-card v-for="match in matches" :match="match"></match-card>    
+    <match-card v-for="match in matches" :match="match" :key="match.id"></match-card>    
 
 </section>
 
@@ -77,11 +82,9 @@ export default {
         .match-container {
             background-color: rgb(16 29 47 / 50%);
 
-            .other-info {
-                background-color: rgb(14 18 23 / 50%);
-            }
         }
     }
+    
 
 
 </style>
