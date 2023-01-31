@@ -1,0 +1,17 @@
+<script>
+
+
+</script>
+
+
+
+<template>
+
+<h1 class="text-success"> Hello world</h1>
+
+</template>
+
+
+<style>
+
+</style>
