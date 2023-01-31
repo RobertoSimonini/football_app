@@ -28,6 +28,7 @@ export default {
 <template>
   <Jumbotron></Jumbotron>
   <BigMatch></BigMatch>
+  <UpcomingMatch></UpcomingMatch>
 </template>
 
 <style>
