@@ -5,7 +5,6 @@ import AppMain from './components/AppMain.vue';
 import BigMatch from './components/BigMatch.vue';
 import UpcomingMatch from './components/UpComingMatch.vue';
 import PlayerSection from './components/PlayerSection.vue';
-import PlayerCard from './components/PlayerCard.vue';
 import LeagueTable from './components/LeagueTable.vue';
 import Results from './components/Results.vue';
 import NewsSection from './components/NewsSection.vue';
@@ -15,7 +14,7 @@ import AppFooter from './components/Appfooter.vue';
 import { store } from './store';
 
 export default {
-  components: {Navbar, Jumbotron, BigMatch, UpcomingMatch, PlayerCard, LeagueTable, Results, NewsSection, NewsCard, AppFooter, AppMain, PlayerSection },
+  components: {Navbar, Jumbotron, BigMatch, UpcomingMatch, LeagueTable, Results, NewsSection, NewsCard, AppFooter, AppMain, PlayerSection },
   data() {
     return {
       store,
