@@ -1,8 +1,12 @@
 <script>
 import Navbar from './Navbar.vue';
 export default {
-
-    components: {Navbar}
+    components: {Navbar},
+    data(){
+        return {
+            
+        }
+    }
 
 }
 
@@ -14,6 +18,32 @@ export default {
 <section id="jumbotron">
     <Navbar></Navbar>
     <img class="img-fluid" src="../assets/img/slider2-1.jpg" alt="">
+    
+    <div class="prev">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+    </div>
+
+    <div class="next">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+    </div>
+
+
+    <div class="content text-center text-white position-absolute z-1">
+        <div>
+            <h1>
+                FootBall Club
+            </h1>
+            <h1>
+                Sport Club
+            </h1>
+        </div>
+        <h3>
+            Private Football matches
+        </h3>
+        <a class="btn btn-outline-light" href="#">Learn More <i class="fa-solid fa-arrow-right"></i> </a>
+    </div>
+
+
 </section>
 
 </template>
@@ -34,6 +64,43 @@ export default {
         height: 100%;
         width: 100%;
     }
+
+}
+.content {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+
+    h1 {
+        font-size: 75px;
+    }        
+
+    a {
+        padding: 20px 40px;
+        font-size: 20px;
+        border-radius: 30px;
+    }
+
+    > * {
+        margin: 1.5rem 0;
+    }
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    z-index: 1;
+    color: white;
+    cursor: pointer;
+}
+
+.prev {
+    left: 2rem;
+}
+
+.next {
+    right: 2rem;
 }
 
 </style>

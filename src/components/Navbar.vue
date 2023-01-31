@@ -109,7 +109,7 @@ export default {
 <style lang="scss" scoped>
 
     nav {
-        height: 225px;
+        height: 200px;
         background-color: rgb(2,7,10, 0.5);
         position: absolute;
         top: 0;
