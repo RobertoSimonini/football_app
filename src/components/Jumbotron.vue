@@ -4,10 +4,45 @@ export default {
     components: {Navbar},
     data(){
         return {
-            
+            currentIndex: 0,
+            pictures: [
+                    {
+                    url: '/src/assets/img/slider1-1.jpg',
+                    id: 0
+                },
+                {
+                    url: '/src/assets/img/slider2-1.jpg',
+                    id: 1
+                },
+                {
+                    url: '/src/assets/img/slider3.jpg',
+                    id: 2
+                },
+                {
+                    url: '/src/assets/img/slider4.jpg',
+                    id: 3
+                },
+            ]
         }
-    }
+    },
+    computed: {
+        prevInfinite() {
+            if (this.currentIndex < 0) {
+                return this.currentIndex = this.pictures.length - 1;
+            }
+        },
 
+        nextInfinite() {
+            if (this.currentIndex === this.pictures.length) {
+                return this.currentIndex = 0;
+                }
+            }
+        },
+        methods: {
+            changeThumb(index) {
+            this.currentIndex = index;
+            }  
+        }
 }
 
 </script>
@@ -17,14 +52,14 @@ export default {
 
 <section id="jumbotron">
     <Navbar></Navbar>
-    <img class="img-fluid" src="../assets/img/slider2-1.jpg" alt="">
+    <img v-for="pic in pictures" class="img-fluid" :src="pic.url" alt="" v-show="currentIndex === pic.id" :key="pic.id">
     
     <div class="prev">
-        <i class="fa-solid fa-circle-chevron-left"></i>
+        <i @click="currentIndex--, prevInfinite" class="fa-solid fa-circle-chevron-left"></i>
     </div>
 
     <div class="next">
-        <i class="fa-solid fa-circle-chevron-right"></i>
+        <i @click="currentIndex++, nextInfinite" class="fa-solid fa-circle-chevron-right"></i>
     </div>
 
 
@@ -65,6 +100,10 @@ export default {
         width: 100%;
     }
 
+    img.active {
+        display: block;
+    }
+
 }
 .content {
     top: 60%;
@@ -102,5 +141,8 @@ export default {
 .next {
     right: 2rem;
 }
+
+
+
 
 </style>
