@@ -33,6 +33,7 @@ export default {
   <player-section></player-section>
   <league-table></league-table>
   <app-sponsor></app-sponsor>
+  <news-section></news-section>
 </template>
 
 <style>
