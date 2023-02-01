@@ -10,11 +10,12 @@ import Results from './components/Results.vue';
 import NewsSection from './components/NewsSection.vue';
 import NewsCard from './components/NewsCard.vue';
 import AppFooter from './components/Appfooter.vue';
+import AppSponsor from './components/AppSponsor.vue';
 
 import { store } from './store';
 
 export default {
-  components: {Navbar, Jumbotron, BigMatch, UpcomingMatch, LeagueTable, Results, NewsSection, NewsCard, AppFooter, AppMain, PlayerSection },
+  components: {Navbar, Jumbotron, BigMatch, UpcomingMatch, LeagueTable, Results, NewsSection, NewsCard, AppFooter, AppMain, PlayerSection, AppSponsor },
   data() {
     return {
       store,
@@ -31,8 +32,11 @@ export default {
   <upcoming-match></upcoming-match>
   <player-section></player-section>
   <league-table></league-table>
+  <app-sponsor></app-sponsor>
 </template>
 
 <style>
-
+  body {
+    font-family: sans-serif;
+  }
 </style>

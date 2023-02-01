@@ -75,6 +75,8 @@ export default {
 
 <template>
     <section id="ratings" class="p-5 d-flex justify-content-between flex-wrap">
+
+        <!-- Qui metto la tabella della classifica  -->
         <table class="table table-borderless">
             <thead>
                 <tr>
@@ -194,18 +196,22 @@ export default {
                     <td>4</td>
                     <td>20</td>
                 </tr>
+
+                <tr class="league-table text-center">
+                    <td class="fw-bold">
+                        View Full League Table
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
             </tbody>
 
-            <tfoot>
-                <tr class="text-center">
-                    <th scope="col" class="w-100">View full League Table</th> <th scope="col"></th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
-                </tr>
-            </tfoot>
         </table>
 
+        <!-- Qui metto la tabelle dei risultati/partite -->
         <table id="results" class="table table-striped">
             <tbody>
                 <tr v-for="match in matches" class="text-center">
@@ -218,9 +224,16 @@ export default {
                     </td>
                    
                 </tr>
+                <tr>
+                    <td class="text-center fixtures">
+                        View Full Fixtures
+                    </td>
+                </tr>
             </tbody>
         </table>
 
+        <!-- Qui metto l'immagino dello sponsor -->
+        
     </section>
 
 </template>
@@ -231,10 +244,9 @@ export default {
  //TABELLA
 
 #ratings {
-    min-height: 500px;
     
         table {
-            width: 45%;
+            width: 48.5%;
 
             th {
                 font-weight: normal;
@@ -272,17 +284,10 @@ tbody {
     background-color: #F5F5F5;
 }
 
-tfoot {
-    background-color: #000000;
-    color: #ffff;
-    height: 65px;
-    font-weight: bold;
-}
 
 // RESULTS 
 
 #results {
-    width: 45%;
 
     img {
         height: 50px;
@@ -292,6 +297,19 @@ tfoot {
         line-height: 75px;
     }
 
+}
+
+// GENERICS
+
+.league-table, .fixtures {
+    background-color: rgb(0,0,0);
+    color: #ffff;
+    height: 75px;
+    cursor: pointer;
+}
+
+.league-table .fw-bold {
+    transform: translateX(60px);
 }
 
 </style>
