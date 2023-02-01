@@ -30,6 +30,7 @@ export default {
   <big-match></big-match>
   <upcoming-match></upcoming-match>
   <player-section></player-section>
+  <league-table></league-table>
 </template>
 
 <style>
