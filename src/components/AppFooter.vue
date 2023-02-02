@@ -6,92 +6,94 @@ export default {
 
 <template>
     <footer class="px-3 py-5">
-        <div class="row justify-content-around">
-            <div class="col-2 infos">
-                <ul>
-                    <li>
-                        <img src="../assets/img/logo-football.png" alt="">
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span> New Jersey, USA</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone-volume"></i>
-                        <span> +1 (234) 567 89 10</span>
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <span> example@example.com </span>
-                    </li>
-
-                    <li class="socials">
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                    </li>
-                    
-                </ul>
-            </div>
-
-            <div class="col-4 newsletter">
-                <h1>Join our New Newsletter</h1>
-                <p>
-                    Subscribe to be informed about important development in our club and football world,
-                </p>
-
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control w-100" placeholder="Your email adress">
-                    <button type="button" class="btn btn-outline-light w-100 my-3">Subscribe -></button>
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-3 infos">
+                    <ul>
+                        <li>
+                            <img src="../assets/img/logo-football.png" alt="">
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span> New Jersey, USA</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <span> +1 (234) 567 89 10</span>
+                        </li>
+    
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span> example@example.com </span>
+                        </li>
+    
+                        <li class="socials">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </li>
+                        
+                    </ul>
                 </div>
+    
+                <div class="col-4 newsletter">
+                    <h1>Join our New Newsletter</h1>
+                    <p>
+                        Subscribe to be informed about important development in our club and football world,
+                    </p>
+    
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control w-100" placeholder="Your email adress">
+                        <button type="button" class="btn btn-outline-light w-100 my-3">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+    
+                <div class="col-2 education">
+                    <h2>
+                        Education
+                    </h2>
+                    
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-minus"></i> FIXTURES AND RESULTS</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-minus"></i> LEAGUE TABLE</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-minus"></i> PLAYERS </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-minus"></i> GALLERY </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col-2 lins">
+                    <h2>
+                        Quick Lins
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-minus"></i> HOME</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-minus"></i> BLOG </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-minus"></i> GALLERY </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-minus"></i> CONTACT </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col-12 text-center">
+                    2022 Football Club. <i class="fa-solid fa-minus"></i> All Rights reserved.
+                </div>
+    
             </div>
-
-            <div class="col-2 education">
-                <h2>
-                    Education
-                </h2>
-                
-                <ul>
-                    <li>
-                        <a href="#">- FIXTURES AND RESULTS</a>
-                    </li>
-                    <li>
-                        <a href="#">- LEAGUE TABLE</a>
-                    </li>
-                    <li>
-                        <a href="#">- PLAYERS </a>
-                    </li>
-                    <li>
-                        <a href="#">- GALLERY </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-2 lins">
-                <h2>
-                    Quick Lins
-                </h2>
-                <ul>
-                    <li>
-                        <a href="#">- HOME</a>
-                    </li>
-                    <li>
-                        <a href="#">- BLOG </a>
-                    </li>
-                    <li>
-                        <a href="#">- GALLERY </a>
-                    </li>
-                    <li>
-                        <a href="#">- CONTACT </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-12 text-center">
-                2022 Football Club. - All Rights reserved.
-            </div>
-
         </div>
     </footer>
 </template>
@@ -118,10 +120,11 @@ export default {
 
 }
 .socials i{
-        font-size: 35px;
+        font-size: 25px;
         margin-right: 1rem;
         padding: 0.25rem 0.5rem;
         border: 1px solid #ffff;
+        cursor: pointer;
 }
 
 
@@ -138,7 +141,7 @@ export default {
 .education, .lins ul{
     li a {
         color: #ffff;
-        font-size: 17.5px;
+        font-size: 15px;
         line-height: 40px;
         padding: 0;
     }

@@ -38,7 +38,7 @@ export default {
 
 <style>
   body {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
 /* GENERICS  */
@@ -51,5 +51,7 @@ ul {
 ul li a {
   text-decoration: none;
 }
+
+
 
 </style>

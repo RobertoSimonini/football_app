@@ -37,15 +37,20 @@ export default {
 
 <template>
         <section id="sponsor">
-            <div class="sponsor-top">
-                <figure class="h-100">
-                    <img class="h-100" src="../assets/img/reklam.jpg" alt="">
-                </figure>
+            <div class="container">
+                <div class="sponsor-top">
+                    <figure class="h-100">
+                        <img class="h-100" src="../assets/img/reklam.jpg" alt="">
+                    </figure>
+                </div>
             </div>
-            <div class="sponsor-bottom d-flex justify-content-between align-items-center px-5">
-                <figure v-for="sponsor in sponsors" :key="sponsor.id">
-                    <img role="button" :src="sponsor.url" alt="">
-                </figure>
+
+            <div class="sponsor-bottom">
+                <div class="container d-flex justify-content-between align-items-center px-5 h-100">
+                    <figure v-for="sponsor in sponsors" :key="sponsor.id">
+                        <img role="button" :src="sponsor.url" alt="">
+                    </figure>
+                </div>
             </div>  
         </section>
 
@@ -59,14 +64,10 @@ export default {
 
 <style lang="scss" scoped>
     #sponsor {
-        min-height: 300px;
-
         .sponsor-top {
-            height: 275px;
             img {
                 object-fit: cover;
-                height: 100%;
-                width: 100%;
+                object-position: center;
             }
         }
 
@@ -76,10 +77,15 @@ export default {
             color: #fff;
 
             img {
-                height: 200px;
+                height: 150px;
                 border: 2px solid #ffff;
                 padding: 1.5rem;
                 border-radius: 50px;
+                transition: transform 0.25s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
             }
 
         }

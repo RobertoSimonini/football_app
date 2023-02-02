@@ -92,13 +92,15 @@ export default {
     </div>
     <!-- Qui metto la parte riferita alla parte di navigazione  -->
     <div class="nav-bottom h-50">
-        <ul class="h-100">
-            <li v-for="link in links">
-                <a :href="link.href" class="fw-bold px-5">
-                    {{ link.text }}
-                </a>
-            </li>
-        </ul>
+        <div class="container">
+            <ul class="h-100">
+                <li v-for="link in links">
+                    <a :href="link.href" class="fw-bold">
+                        {{ link.text }}
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
@@ -119,13 +121,15 @@ export default {
         ul {
             list-style-type: none;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
 
             li a {
                 color: white;
                 text-decoration: none;
                 text-transform: uppercase;
+                position: relative;
+                padding: 0 10px;
             }
         }
     }
@@ -152,6 +156,23 @@ export default {
         left: 50%;
         transform: translateX(-50%);
 
+    }
+
+
+    /* Links hover effect  */
+    .nav-bottom li a::after{
+        content: '';
+        position: absolute;
+        background-color: white;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px ;
+        transition: 0.3s;
+    }
+
+    .nav-bottom li a:hover::after{
+        width: 100%;
     }
 
 </style>

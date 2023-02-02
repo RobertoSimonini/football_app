@@ -19,7 +19,7 @@ export default {
         </div>
 
         <!-- Qui inserisco le card riferite alle News  -->
-        <div class="news-bottom d-flex">
+        <div class="news-bottom container d-flex">
             <div class="row g-5 justify-content-center">
                 <div class="col-3">
                     <!-- Qui metto la card che parla di cosa è il calcio  -->
@@ -82,7 +82,7 @@ export default {
 
 <style scoped>
     .news-top figure img {
-        height: 150px;
+        height: 200px;
     }
 
     .card {

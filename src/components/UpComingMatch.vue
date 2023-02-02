@@ -60,11 +60,12 @@ export default {
 <template>
 
 <section id="upcoming-matches" class="text-center py-5 px-4">
-
-    <h2 class="text-white">
-        Upcoming Matches
-    </h2>
-    <match-card v-for="match in matches" :match="match" :key="match.id"></match-card>    
+    <div class="container">
+        <h2 class="text-white">
+            Upcoming Matches
+        </h2>
+        <match-card v-for="match in matches" :match="match" :key="match.id"></match-card>    
+    </div>
 
 </section>
 

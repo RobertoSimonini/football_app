@@ -43,20 +43,19 @@ export default {
 
 <template>
 
-    <section id="players" class="text-center py-5 px-4 text-white d-flex flex-column align-items-center justify-content-between">
-        <h2>
-            Players
-        </h2>
-        <div class="container-fluid">
+    <section id="players" class="text-center py-5 px-4 text-white">
+        <div class="container d-flex flex-column align-items-center justify-content-between h-100">
+            <h2>
+                Players
+            </h2>
+    
+                <div class="row g-5">
+                    <player-card v-for="player in players" :player="player" :key="player.id"></player-card>   
+                </div>
 
-            <div class="row g-5">
-                <player-card v-for="player in players" :player="player" :key="player.id"></player-card>   
-            </div>
-
-            
+            <a href="#" class="btn btn-dark my-3">View All Players </a>
         </div>
 
-        <a href="#" class="btn btn-dark my-3">View All Players </a>
     </section>
 
 </template>

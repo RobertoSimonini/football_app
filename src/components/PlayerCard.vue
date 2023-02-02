@@ -7,20 +7,20 @@ export default {
 
 <template>
     <div class="col-3">
-        <div class="product-card text-center">
+        <div class="player-card text-center">
             <figure>
                 <img :src="player.pic" class="img-fluid h-100 w-100" :alt="player.name">
-                <figcaption class="d-flex flex-column justify-content-center">
+                <figcaption class="d-flex flex-column justify-content-center py-2">
                     <div class="number fw-bold">
                         {{ player.number }}
                     </div>
                      <div class="name">
-                        <h4>
+                        <h5>
                             {{player.name}} 
-                        </h4>
-                        <h4>
+                        </h5>
+                        <h5>
                             {{player.role}}
-                        </h4>
+                        </h5>
                     </div>
                 </figcaption>
             </figure>
@@ -31,9 +31,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.product-card {
-    height: 450px;
-    width: 400px;
+.player-card {
+    height: 375px;
+    width: 300px;
     padding: 0;
     border: none;
     position: relative;
