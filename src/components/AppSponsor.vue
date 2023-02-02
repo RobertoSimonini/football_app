@@ -72,7 +72,7 @@ export default {
 
         .sponsor-bottom {
             height: 275px;
-            background-color: #000000;
+            background-color: #9b51e0;
             color: #fff;
 
             img {
