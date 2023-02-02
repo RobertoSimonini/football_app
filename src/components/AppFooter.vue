@@ -1,6 +1,17 @@
 <script>
 export default {
-    
+    data (){
+        return {
+            email: '',
+            emails: []
+            }
+    },
+    methods: {
+        subEmail (){
+            this.emails.push(this.email);
+            this.email = '';
+        }
+    }
 }
 </script>
 
@@ -43,8 +54,8 @@ export default {
                     </p>
     
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control w-100" placeholder="Your email adress">
-                        <button type="button" class="btn btn-outline-light w-100 my-3">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+                        <input v-model="email" type="email" class="form-control w-100" placeholder="Your email adress">
+                        <button @click="subEmail" type="button" class="btn btn-outline-light w-100 my-3">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
     
