@@ -35,15 +35,23 @@ export default {
                 </ul>
             </div>
 
-            <div class="col-6">
+            <div class="col-4 newsletter">
+                <h1>Join our New Newsletter</h1>
+                <p>
+                    Subscribe to be informed about important development in our club and football world,
+                </p>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control w-100" placeholder="Your email adress">
+                    <button type="button" class="btn btn-outline-light w-100 my-3">Subscribe -></button>
+                </div>
+            </div>
+
+            <div class="col-3">
 
             </div>
 
-            <div class="col-2">
-
-            </div>
-
-            <div class="col-2">
+            <div class="col-3">
 
             </div>
 
@@ -63,6 +71,7 @@ export default {
     }
    }
 
+//    Qui metto le infos 
    .infos > ul li{
         padding: 1rem 0.25rem;
         
@@ -78,5 +87,14 @@ export default {
         padding: 0.25rem 0.5rem;
         border: 1px solid #ffff;
     }
+
+
+// QUi metto la la newsletter 
+.newsletter input, button {
+    padding: 1.5rem 2rem;
+    border-radius: 2.25rem !important;
+    background-color: #fff;
+    color: #000000;
+}
 
 </style>    
