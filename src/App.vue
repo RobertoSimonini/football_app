@@ -45,7 +45,7 @@ export default {
 
 ul {
   list-style-type: none;
-  padding: 0;
+  padding: 0 !important;
 }
 
 ul li a {
