@@ -81,10 +81,6 @@ export default {
 
 
 <style scoped>
-    #news {
-        min-height: 500px;
-    }
-
     .news-top figure img {
         height: 150px;
     }

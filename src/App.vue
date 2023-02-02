@@ -9,13 +9,12 @@ import LeagueTable from './components/LeagueTable.vue';
 import Results from './components/Results.vue';
 import NewsSection from './components/NewsSection.vue';
 import NewsCard from './components/NewsCard.vue';
-import AppFooter from './components/Appfooter.vue';
 import AppSponsor from './components/AppSponsor.vue';
-
+import AppFooter from './components/AppFooter.vue';
 import { store } from './store';
 
 export default {
-  components: {Navbar, Jumbotron, BigMatch, UpcomingMatch, LeagueTable, Results, NewsSection, NewsCard, AppFooter, AppMain, PlayerSection, AppSponsor },
+  components: {Navbar, Jumbotron, BigMatch, UpcomingMatch, LeagueTable, Results, NewsSection, NewsCard, AppMain, PlayerSection, AppSponsor, AppFooter},
   data() {
     return {
       store,
@@ -34,6 +33,7 @@ export default {
   <league-table></league-table>
   <app-sponsor></app-sponsor>
   <news-section></news-section>
+  <app-footer></app-footer>
 </template>
 
 <style>
