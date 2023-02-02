@@ -5,8 +5,8 @@ export default {
 </script>
 
 <template>
-    <footer class="p-3">
-        <div class="row justify-content-between">
+    <footer class="px-3 py-5">
+        <div class="row justify-content-around">
             <div class="col-2 infos">
                 <ul>
                     <li>
@@ -88,6 +88,10 @@ export default {
                 </ul>
             </div>
 
+            <div class="col-12 text-center">
+                2022 Football Club. - All Rights reserved.
+            </div>
+
         </div>
     </footer>
 </template>
@@ -95,7 +99,6 @@ export default {
 
 <style lang="scss" scoped>
    footer {
-    height: 500px;
     background-color: #000000;
     color: #ffff;
 
