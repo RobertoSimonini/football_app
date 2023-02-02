@@ -40,4 +40,16 @@ export default {
   body {
     font-family: sans-serif;
   }
+
+/* GENERICS  */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
 </style>

@@ -6,7 +6,7 @@ export default {
 
 <template>
     <footer class="p-3">
-        <div class="row">
+        <div class="row justify-content-between">
             <div class="col-2 infos">
                 <ul>
                     <li>
@@ -47,12 +47,45 @@ export default {
                 </div>
             </div>
 
-            <div class="col-3">
-
+            <div class="col-2 education">
+                <h2>
+                    Education
+                </h2>
+                
+                <ul>
+                    <li>
+                        <a href="#">- FIXTURES AND RESULTS</a>
+                    </li>
+                    <li>
+                        <a href="#">- LEAGUE TABLE</a>
+                    </li>
+                    <li>
+                        <a href="#">- PLAYERS </a>
+                    </li>
+                    <li>
+                        <a href="#">- GALLERY </a>
+                    </li>
+                </ul>
             </div>
 
-            <div class="col-3">
-
+            <div class="col-2 lins">
+                <h2>
+                    Quick Lins
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">- HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">- BLOG </a>
+                    </li>
+                    <li>
+                        <a href="#">- GALLERY </a>
+                    </li>
+                    <li>
+                        <a href="#">- CONTACT </a>
+                    </li>
+                </ul>
             </div>
 
         </div>
@@ -72,7 +105,7 @@ export default {
    }
 
 //    Qui metto le infos 
-   .infos > ul li{
+.infos > ul li{
         padding: 1rem 0.25rem;
         
         img {
@@ -80,13 +113,13 @@ export default {
             filter: grayscale(1);
         }
 
-    }
-    .socials i{
+}
+.socials i{
         font-size: 35px;
         margin-right: 1rem;
         padding: 0.25rem 0.5rem;
         border: 1px solid #ffff;
-    }
+}
 
 
 // QUi metto la la newsletter 
@@ -96,5 +129,17 @@ export default {
     background-color: #fff;
     color: #000000;
 }
+
+// Qui metto la col dell'education 
+
+.education, .lins ul{
+    li a {
+        color: #ffff;
+        font-size: 17.5px;
+        line-height: 40px;
+        padding: 0;
+    }
+}
+
 
 </style>    
