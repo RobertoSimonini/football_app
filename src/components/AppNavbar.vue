@@ -9,15 +9,15 @@ export default {
                 },
                 {
                     text: 'Fixtures & Results',
-                    href: '#'
+                    href: '#results'
                 },
                 {
                     text: 'League Table',
-                    href: '#'
+                    href: '#rating'
                 },
                 {
                     text: 'Players',
-                    href: '#'
+                    href: '#players'
                 },
                 {
                     text: 'Gallery',
@@ -95,7 +95,7 @@ export default {
         <div class="container">
             <ul class="h-100">
                 <li v-for="link in links">
-                    <a :href="link.href" class="fw-bold">
+                    <a :href="link.href" class="fw-bold ms-4">
                         {{ link.text }}
                     </a>
                 </li>

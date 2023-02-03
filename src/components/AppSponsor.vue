@@ -21,11 +21,11 @@ export default {
                 },
                 {
                     url: '/src/assets/img/client9.png',
-                    id: 1
+                    id: 5
                 },
                 {
                     url: '/src/assets/img/client10.png',
-                    id: 1
+                    id: 6
                 },
             ]
         }
@@ -36,8 +36,10 @@ export default {
 
 
 <template>
+
         <section id="sponsor">
             <div class="container">
+                <!-- Slogan  -->
                 <div class="sponsor-top">
                     <figure class="h-100">
                         <img class="h-100" src="../assets/img/reklam.jpg" alt="">
@@ -45,6 +47,7 @@ export default {
                 </div>
             </div>
 
+            <!-- Aziende sponsors  -->
             <div class="sponsor-bottom">
                 <div class="container d-flex justify-content-between align-items-center px-5 h-100">
                     <figure v-for="sponsor in sponsors" :key="sponsor.id">
@@ -68,6 +71,7 @@ export default {
             img {
                 object-fit: cover;
                 object-position: center;
+                width: 100%;
             }
         }
 

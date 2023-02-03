@@ -6,13 +6,13 @@ export default {
 </script>
 
 <template>
-    <section id="news" class="p-5">
+    <section id="news" class="p-4">
         <!-- Qui metto lo slogan promozionale della sezione News  -->
         <div class="news-top text-center">
             <figure>
                 <img src="../assets/img/like_button.png" alt="">
                 <figcaption>
-                    <h1>Resent New & Article</h1>
+                    <h1>Recent News & Articles</h1>
                     <article class="fw-light">Be aware of the football world.</article>
                 </figcaption>
             </figure>
@@ -20,7 +20,7 @@ export default {
 
         <!-- Qui inserisco le card riferite alle News  -->
         <div class="news-bottom container d-flex">
-            <div class="row g-5 justify-content-center">
+            <div class="row g-3 justify-content-center">
                 <div class="col-3">
                     <!-- Qui metto la card che parla di cosa è il calcio  -->
                     <div class="card">
@@ -72,8 +72,7 @@ export default {
                     </div>
                 </div>
             </div>
-            
-
+        
         </div>
     </section>
 

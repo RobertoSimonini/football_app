@@ -1,5 +1,5 @@
 <script>
-import Navbar from './Navbar.vue';
+import Navbar from './AppNavbar.vue';
 export default {
     components: {Navbar},
     data(){
@@ -25,6 +25,13 @@ export default {
             ]
         }
     },
+    
+    methods: {
+        changeThumb(index) {
+        this.currentIndex = index;
+        }  
+    },
+
     computed: {
         prevInfinite() {
             if (this.currentIndex < 0) {
@@ -37,11 +44,6 @@ export default {
                 return this.currentIndex = 0;
                 }
             }
-        },
-        methods: {
-            changeThumb(index) {
-            this.currentIndex = index;
-            }  
         }
 }
 

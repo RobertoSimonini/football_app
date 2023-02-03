@@ -19,6 +19,8 @@ export default {
     <footer class="px-3 py-5">
         <div class="container">
             <div class="row justify-content-around">
+
+                <!-- Qui metto la colonna dedicata ai contati  -->
                 <div class="col-3 infos">
                     <ul>
                         <li>
@@ -47,6 +49,7 @@ export default {
                     </ul>
                 </div>
     
+                <!-- Qui metto la colonna dedicata alla sub alla newsletter  -->
                 <div class="col-4 newsletter">
                     <h1>Join our New Newsletter</h1>
                     <p>
@@ -54,11 +57,12 @@ export default {
                     </p>
     
                     <div class="input-group mb-3">
-                        <input v-model="email" type="email" class="form-control w-100" placeholder="Your email adress">
+                        <input v-model="email" type="email" @keyup.enter="subEmail" class="form-control w-100" placeholder="Your email adress">
                         <button @click="subEmail" type="button" class="btn btn-outline-light w-100 my-3">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
     
+                <!-- Qui metto la colonna dedicata all'education -->
                 <div class="col-2 education">
                     <h2>
                         Education
@@ -66,13 +70,13 @@ export default {
                     
                     <ul>
                         <li>
-                            <a href="#"><i class="fa-solid fa-minus"></i> FIXTURES AND RESULTS</a>
+                            <a href="#results"><i class="fa-solid fa-minus"></i> FIXTURES AND RESULTS</a>
                         </li>
                         <li>
-                            <a href="#"> <i class="fa-solid fa-minus"></i> LEAGUE TABLE</a>
+                            <a href="#rating"> <i class="fa-solid fa-minus"></i> LEAGUE TABLE</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-solid fa-minus"></i> PLAYERS </a>
+                            <a href="#players"><i class="fa-solid fa-minus"></i> PLAYERS </a>
                         </li>
                         <li>
                             <a href="#"><i class="fa-solid fa-minus"></i> GALLERY </a>
@@ -80,6 +84,7 @@ export default {
                     </ul>
                 </div>
     
+                <!-- Qui metto la colonna dedicata ai link utili  -->
                 <div class="col-2 lins">
                     <h2>
                         Quick Lins

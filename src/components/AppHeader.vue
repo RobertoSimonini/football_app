@@ -1,5 +1,5 @@
 <script>
-import Jumbotron from './Jumbotron.vue';
+import Jumbotron from './AppJumbotron.vue';
 export default {
     components: {Jumbotron}
 }

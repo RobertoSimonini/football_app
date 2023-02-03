@@ -77,6 +77,8 @@ export default {
     
     <section id="ratings" class="p-5">
         <div class="container d-flex justify-content-between flex-wrap">
+
+            <!-- Qui metto la classifica  -->
             <div id="rating">
                 <h1 class="text-center py-2"> League Table </h1>
                 <table class="table table-borderless">
@@ -214,8 +216,8 @@ export default {
                 </table>
     
             </div>
-            <!-- Qui metto la tabella della classifica  -->
-    
+
+            <!-- Qui metto i risultati e le fixtures  -->
             <div id="results">
                 <h1 class="text-center py-2"> Fixtures & Results </h1>
                 <table class="table table-striped">
