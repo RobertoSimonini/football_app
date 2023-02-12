@@ -5,6 +5,7 @@ export default {
     data(){
         return {
             currentIndex: 0,
+            autoPlaySupport: null,
             pictures: [
                     {
                     url: '/src/assets/img/slider1-1.jpg',
@@ -25,12 +26,6 @@ export default {
             ]
         }
     },
-    
-    methods: {
-        changeThumb(index) {
-        this.currentIndex = index;
-        }  
-    },
 
     computed: {
         prevInfinite() {
@@ -38,14 +33,38 @@ export default {
                 return this.currentIndex = this.pictures.length - 1;
             }
         },
-
+        
         nextInfinite() {
             if (this.currentIndex === this.pictures.length) {
                 return this.currentIndex = 0;
-                }
             }
         }
-}
+    },
+    
+    methods: {
+        changeThumb(index) {
+        this.currentIndex = index;
+        },
+        
+        autoPlay(){
+            this.autoPlaySupport = setInterval (() =>{
+                this.currentIndex++
+                this.nextInfinite(); 
+            }, 3000);   
+        },
+
+        stopAutoPlay(){
+            clearInterval(this.autoPlaySupport);
+        },
+    },
+
+
+    mounted () {
+        this.autoPlay()
+    }
+     
+} 
+
 
 </script>
 
@@ -54,7 +73,7 @@ export default {
 
 <section id="jumbotron">
     <Navbar></Navbar>
-    <img v-for="pic in pictures" class="img-fluid" :src="pic.url" alt="" v-show="currentIndex === pic.id" :key="pic.id">
+    <img @mouseover="stopAutoPlay" v-for="pic in pictures" class="img-fluid" :src="pic.url" alt="" v-show="currentIndex === pic.id" :key="pic.id">
     
     <div class="prev">
         <i @click="currentIndex--, prevInfinite" class="fa-solid fa-circle-chevron-left"></i>
